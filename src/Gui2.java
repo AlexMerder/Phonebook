@@ -40,7 +40,7 @@ public class Gui2 {
         JButton duplicate = new JButton("Duplicate contact");
         JButton unite = new JButton("Unit contact");
 
-        panel1.add(text,BorderLayout.CENTER);
+        panel5.add(text,BorderLayout.WEST);
         panel4.add(download);
         panel4.add(duplicate);
         panel4.add(unite);
