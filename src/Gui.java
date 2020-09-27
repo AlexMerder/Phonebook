@@ -15,6 +15,12 @@ public class Gui {
         frame.setLayout(new BorderLayout());
 
 
+        Image image = Toolkit.getDefaultToolkit().getImage("C:/Users/cskac/Desktop/Phonebook_program/Phonebook/src/images/logo.png");
+        
+        frame.setIconImage(image);
+
+
+
 
 
         JPanel panel = new JPanel();
