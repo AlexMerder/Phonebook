@@ -18,38 +18,36 @@ public class Gui2 {
         JPanel panel2 = new JPanel();
 
 
-        panel1.setBackground(Color.LIGHT_GRAY);
+        panel1.setBackground(new Color(33,15,53));
+        panel2.setBackground(new Color(53,29,77));
+
+        frame.add(panel1, BorderLayout.BEFORE_FIRST_LINE); //поиск, удалить, редактировать, добавить
+        frame.add(panel2,BorderLayout.CENTER); //загрузить, дублировать, объединить
 
 
-        frame.add(panel1, BorderLayout.WEST); //поиск, удалить, редактировать, добавить
-        frame.add(panel2,BorderLayout.EAST); //загрузить, дублировать, объединить
 
-
-
-
+//кнопки
         JTextField search = new JTextField(30);
         JButton add = new JButton("Add contact");
         JButton delete = new JButton("Delete contact");
         JButton edit = new JButton("Edit contact");
         JButton download = new JButton("Download contact's");
         JButton duplicate = new JButton("Duplicate contact");
-        JButton unite = new JButton("Unit contact");
+        JButton unite = new JButton("Unit contact's");
         JLabel searchLabel = new JLabel("Search");
 
-     /*   panel1.add(searchLabel);
-        panel1.add(search);
-        panel2.add(add);
-        panel2.add(delete);
-        panel2.add(edit);
-        panel2.add(download);
-        panel2.add(duplicate);
-        panel2.add(unite);*/
+
+
+
+        Font f1 = new Font("Roboto", Font.PLAIN, 13);
+        searchLabel.setForeground(Color.WHITE);
+        searchLabel.setFont(f1);
+
 
 
 
 
         panel1.add(searchLabel,new GridBagConstraints(0, 0, 0, 0, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
-
         panel1.add(search,new GridBagConstraints(1, 0, 0, 0, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
 
         panel2.add(add,new GridBagConstraints(0, 1, 1, 1, 0.0, 0.0, GridBagConstraints.EAST, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
