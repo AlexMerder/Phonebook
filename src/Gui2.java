@@ -3,12 +3,15 @@ import java.awt.*;
 
 public class Gui2 {
 
+    public static JFrame frame;
+
+
     public static void main(String[] args) {
 
 
 
 
-        JFrame frame = new JFrame("Phonebook");
+        frame = new JFrame("Phonebook");
         frame.setSize(1000,500);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
