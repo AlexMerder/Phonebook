@@ -14,6 +14,9 @@ public class Gui {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
+
+
+
         JPanel panel = new JPanel();
         panel.setLayout(new GridBagLayout());
         frame.add(panel, BorderLayout.CENTER);
