@@ -16,9 +16,8 @@ public class Gui {
 
 
         Image image = Toolkit.getDefaultToolkit().getImage("C:/Users/cskac/Desktop/Phonebook_program/Phonebook/src/images/logo.png");
-        
         frame.setIconImage(image);
-
+        
 
 
 
