@@ -6,9 +6,7 @@ import java.util.Arrays;
 
 public class Gui {
 
-
-    public static void main(String[] args) {
-//создаем форму и указываем параметры
+    public Gui(){
         JFrame frame = new JFrame("Phonebook");
         frame.setSize(300, 150);
         frame.setLocationRelativeTo(null);
@@ -18,7 +16,7 @@ public class Gui {
 
         Image image = Toolkit.getDefaultToolkit().getImage("C:/Users/cskac/Desktop/Phonebook_program/Phonebook/src/images/logo.png");
         frame.setIconImage(image);
-        
+
 
 
 
@@ -99,3 +97,5 @@ public class Gui {
 
     }
 }
+
+

@@ -3,11 +3,8 @@ import java.awt.*;
 
 public class Gui2 extends JFrame{
 
-    public static JFrame frame;
-
-
-    public static void main(String[] args) {
-
+    public Gui2(){
+        JFrame frame;
 
         frame = new JFrame("Phonebook");
         frame.setSize(1000, 500);
@@ -67,3 +64,5 @@ public class Gui2 extends JFrame{
     }
 
 }
+
+
