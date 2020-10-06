@@ -1,16 +1,12 @@
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
-public class Gui2 {
+public class Gui2 extends JFrame{
 
     public static JFrame frame;
 
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
 
         frame = new JFrame("Phonebook");
@@ -66,9 +62,6 @@ public class Gui2 {
         download.setCursor(cursor);
         duplicate.setCursor(cursor);
         unite.setCursor(cursor);
-
-
-        
 
         frame.setVisible(true);
     }

@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
 
 public class Gui {
 
@@ -76,9 +77,18 @@ public class Gui {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String text1 = loginText.getText();
+                if (text1.equals("admin")){
+                    System.out.println("OK");
+                }
                 char[] text2 = passwordField.getPassword();
-                loginText.setText(String.valueOf(text2));
-                passwordField.setText(text1);
+                String password = Arrays.toString(text2);
+                if (password.equals("8991")){
+                    System.out.println("OK");
+                }
+
+
+
+
 
 
             }
