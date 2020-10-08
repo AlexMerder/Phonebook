@@ -5,8 +5,6 @@ import java.sql.SQLException;
 public class DataBaseConnector {
 
 
-    //http://127.0.0.1:51997/?key=5af1e2b9-bb52-489f-aed7-d81d4d28b72f
-
     static final String DB_URL = "jdbc:postgresql://127.0.0.1:5432/Phonebook";
     static final String USER = "postgres";
     static final String PASS = "8991";
@@ -26,8 +24,7 @@ public class DataBaseConnector {
         Connection connection = null;
 
         try {
-            connection = DriverManager
-                    .getConnection(DB_URL, USER, PASS);
+            connection = DriverManager.getConnection(DB_URL, USER, PASS);
 
         } catch (SQLException e) {
             System.out.println("Connection Failed");
